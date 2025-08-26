@@ -7,15 +7,19 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <!-- Header -->
+
   <header class="site-header">
     <div class="container nav">
       <div class="brand">
-        <div class="brand__logo">B</div>
+        <div class="brand__logo">
+          <img src="./img/nacional.png" alt="Solo nacional">
+        </div>
         <span>Brayan · Portafolio</span>
       </div>
+
+
       <nav class="links">
-        <a href="#skills">Skills</a>
+        <a href="#skills">Habilidades</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#hobbies">Hobbies</a>
         <a href="#contacto">Contacto</a>
@@ -23,7 +27,9 @@
     </div>
   </header>
 
+
   <main class="container">
+    
     <!-- HERO -->
     <section class="hero">
       <figure class="portrait">
@@ -31,9 +37,9 @@
         <img src="./img/perfil.jpg" alt="Foto de Brayan" class="me" />
       </figure>
       <div class="hero__text">
-        <h1>Hola, soy Brayan</h1>
+        <h1>Hola, soy Brayan Stiven Ortiz Cumbe</h1>
         <h2>Estudiante de Ingeniería de Sistemas</h2>
-        <p>Estoy aprendiendo programación y desarrollo web, con interés en crear proyectos útiles y prácticos mientras avanzo en mi carrera universitaria.</p>
+        <p>Tengo 19 años, soy de aqui de Florencia Caquetá y un gusto para todas aquellas personas que visualicen mi pagina web. Estoy aprendiendo programación y desarrollo web, con interés en crear proyectos útiles y prácticos mientras avanzo en mi carrera universitaria.</p>
       </div>
     </section>
 
@@ -41,23 +47,31 @@
     <section id="skills">
       <h2>Mis Lenguajes</h2>
       <div class="skills">
+
         <article class="skill-card">
-          <img src="./img/java.png" alt="Logo de Java" class="skill-logo">
+          <a href="https://www.java.com/" target="_blank">
+            <img src="./img/java.png" alt="Logo de Java" class="skill-logo">
+          </a>
           <h3>Java</h3>
           <p>Me desenvuelvo bien en programación orientada a objetos, estructuras de datos y aplicaciones básicas.</p>
         </article>
 
         <article class="skill-card">
-          <img src="./img/cpp.png" alt="Logo de C++" class="skill-logo">
+          <a href="https://isocpp.org/" target="_blank">
+            <img src="./img/cpp.png" alt="Logo de C++" class="skill-logo">
+          </a>
           <h3>C++</h3>
           <p>Buen manejo de estructuras de control, algoritmos y lógica de programación aplicada.</p>
         </article>
 
         <article class="skill-card">
-          <img src="./img/lua.png" alt="Logo de Lua" class="skill-logo">
+          <a href="https://www.lua.org/" target="_blank">
+            <img src="./img/lua.png" alt="Logo de Lua" class="skill-logo">
+          </a>
           <h3>Lua</h3>
           <p>Experiencia básica en desarrollo de scripts para videojuegos y sistemas interactivos.</p>
         </article>
+
       </div>
     </section>
 
@@ -68,12 +82,12 @@
         <article class="card">
           <h3>POO en Java</h3>
           <p>Ejercicios de Programación Orientada a Objetos, aplicando herencia y polimorfismo.</p>
-          <a class="btn btn--ghost" href="#">Repositorio</a>
+          <a class="btn btn--ghost" href="https://github.com/BrayanOrtiz115/Prueba">Repositorio</a>
         </article>
         <article class="card">
           <h3>Estructuras de Datos</h3>
           <p>Implementaciones de listas, pilas y colas en Java, aplicadas en ejemplos prácticos.</p>
-          <a class="btn btn--ghost" href="#">Repositorio</a>
+          <a class="btn btn--ghost" href="https://github.com/BrayanOrtiz115/Prueba">Repositorio</a>
         </article>
       </div>
     </section>
@@ -81,43 +95,58 @@
     <!-- HOBBIES -->
     <section id="hobbies">
       <h2>Mis Hobbies</h2>
-      <div class="hobbies-carousel">
-        <div class="hob">
+      <!--Contenido aside (secundario)-->
+      <aside class="hobbies-carousel">
+        <!--articulos de cada hobby-->
+        <article class="hob">
           <img src="./img/juegos.png" alt="Juegos">
+          <p class="hob-name">Juegos</p>
           <span class="hob-desc">Me gusta jugar videojuegos para divertirme, relajarme y compartir con amigos.</span>
-        </div>
-        <div class="hob">
+        </article>
+
+        <article class="hob">
           <img src="./img/baloncesto.png" alt="Baloncesto">
-          <span class="hob-desc">Me encanta el baloncesto porque me ayuda a divertirme,tener un buen fisico, conocer gente y compartir buenos momentos con los demás en la cancha.</span>
-        </div>
-        <div class="hob">
+          <p class="hob-name">Baloncesto</p>
+          <span class="hob-desc">Me encanta el baloncesto porque me ayuda a divertirme y compartir buenos momentos en la cancha.</span>
+        </article>
+
+        <article class="hob">
           <img src="./img/dormir.jpg" alt="Dormir">
-          <span class="hob-desc">Ha quien no le gusta dormir jaja</span>
-        </div>
-        <div class="hob">
+          <p class="hob-name">Dormir</p>
+          <span class="hob-desc">Una dormia mientras llueve es lo mejor</span>
+        </article>
+
+        <article class="hob">
           <img src="./img/gimnasio.png" alt="Gimnasio">
-          <span class="hob-desc">Ir al gimnasio para mantenerme activo y que me de la palida</span>
-        </div>
-        <div class="hob">
+          <p class="hob-name">Gimnasio</p>
+          <span class="hob-desc">Ir al gimnasio para mantenerme activo y que me dé la pálida</span>
+        </article>
+
+        <article class="hob">
           <img src="./img/musica.jpg" alt="Música">
+          <p class="hob-name">Música</p>
           <span class="hob-desc">Escuchar música es un encanto</span>
-        </div>
-        <div class="hob">
+        </article>
+
+        <article class="hob">
           <img src="./img/amigos.jpg" alt="Amigos">
+          <p class="hob-name">Amigos</p>
           <span class="hob-desc">Hablar con amigos</span>
-        </div>
-        <div class="hob">
+        </article>
+
+        <article class="hob">
           <img src="./img/salir.jpg" alt="Salir">
+          <p class="hob-name">Salir</p>
           <span class="hob-desc">Salir y conocer lugares</span>
-        </div>
-      </div>
+        </article>
+      </aside>
     </section>
 
-    <!-- CONTACTO -->
+
     <section id="contacto">
       <h2>Contacto</h2>
       <p class="section-desc">¿Construimos algo juntos? Escríbeme y te respondo.</p>
-      
+      <!--Formulario de contacto-->
       <form class="contact-form" action="mailto:tu.email@ejemplo.com" method="post" enctype="text/plain">
         <label>Nombre
           <input type="text" name="nombre" placeholder="Tu nombre" required>
@@ -131,18 +160,19 @@
         <button type="submit" class="btn btn--solid">Enviar</button>
       </form>
 
-      <div class="socials">
+      <aside class="socials">
         <a href="https://github.com/" target="_blank"><img src="./img/github.png" alt="GitHub"></a>
         <a href="https://facebook.com/" target="_blank"><img src="./img/facebook.png" alt="Facebook"></a>
         <a href="https://instagram.com/" target="_blank"><img src="./img/instagram.png" alt="Instagram"></a>
         <a href="https://t.me/" target="_blank"><img src="./img/telegram.png" alt="Telegram"></a>
         <a href="https://tiktok.com/" target="_blank"><img src="./img/tiktok.png" alt="TikTok"></a>
-      </div>
+      </aside>
     </section>
   </main>
 
+
   <footer class="site-footer">
-    <p>© 2025 Brayan</p>
+    <p>© 2025 Brayan Stiven Ortiz Cumbe</p>
   </footer>
 </body>
 </html>

@@ -1,9 +1,9 @@
-/* === Base === */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0b1020;
-  color: #E5EAF7;
+  background: #0b1020; /* Texto oscuro*/
+  color: #E5EAF7; /*  Texto claro*/
 }
 
 .container {
@@ -16,13 +16,13 @@ body {
 h1, h2, h3 {
      margin: 0 0 10px;
 }
+/* Header */
 
-/* === Header === */
 .site-header {
   background: rgba(10,16,32,.9);
   border-bottom: 1px solid rgba(148,163,184,.2);
   padding: 10px 0;
-  position: sticky;
+  position: sticky; /* Lo mantiene fijo */ 
   top: 0;
 }
 
@@ -31,21 +31,33 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center; 
 }
-
+/* Logo cuadrado */
 .brand__logo {
-  width: 36px; height: 36px;
-  border-radius: 8px;
-  display: grid; place-items: center;
-  background: linear-gradient(135deg, #6EE7B7, #60A5FA);
-  color: #0b1020; font-weight: bold;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
 }
+
+.brand__logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px; /* Ajusta la imagen sin deformarla */
+}
+
+/* nav */
 .links a {
     color: #E5EAF7;
     margin: 0 10px;
     text-decoration: none;
 }
 
-/* === Hero === */
+
 .hero {
     display: flex;
     flex-wrap: wrap;
@@ -60,11 +72,11 @@ h1, h2, h3 {
 .portrait { 
   flex: 1; 
   position: relative; 
-  max-width: 300px;   /* aumentamos un poco el tamaño */
+  max-width: 300px;   
   margin: auto;
   border-radius: 24px; 
   overflow: hidden;
-  border: 2px solid rgba(148,163,184,.3); 
+  border: 2px solid rgba(148,163,184,.3); /* borde verde */
   box-shadow: 0 10px 30px rgba(0,0,0,.5); 
 }
     
@@ -77,24 +89,40 @@ h1, h2, h3 {
     border: 3px solid #6EE7B7; 
 }
 
-/* === Skills === */
+
 .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
     gap: 80px; margin-top: 90px; 
 }
-
+/* Cada cuadro de lenguaje*/
 .skill-card {
-  background: #10172A; border: 1px solid rgba(148,163,184,.2);
-  border-radius: 12px; padding: 15px; text-align: center;
+  background: #10172A; 
+  border: 1px solid rgba(148,163,184,.2);
+  border-radius: 12px; 
+  padding: 15px; 
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Eefecto de movimiento */
+.skill-card:hover {
+  transform: scale(1.05); /* agranda un poco el cuadro */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
 
 .skill-logo {
-    max-width: 160px;
-    margin-bottom: 10px; 
+  max-width: 160px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* suaviza el efecto */
+}
+/* la imagen crece cuando el mouse esta al frente de la imagen*/
+.skill-logo:hover {
+  transform: scale(1.2); /* agranda 20% */
 }
 
-/* === Proyectos === */
+/* Proyectos */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
@@ -139,9 +167,12 @@ h1, h2, h3 {
     text-align: center; 
 }
 
-.hob img { 
-    max-width: 100%; 
-    border-radius: 10px; 
+.hob img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+
 }
 .hob-desc {
   position: absolute; 
@@ -204,7 +235,7 @@ h1, h2, h3 {
     transform: scale(1.1); 
 }
 
-/* === Footer === */
+
 .site-footer { 
     background: #10172A; 
     color: #93A4C7; 
