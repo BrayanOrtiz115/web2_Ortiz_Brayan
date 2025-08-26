@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio de Brayan</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand__logo">B</div>
+        <span>Brayan · Portafolio</span>
+      </div>
+      <nav class="links">
+        <a href="#skills">Skills</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <figure class="portrait">
+        <div class="blob"></div>
+        <img src="./img/perfil.jpg" alt="Foto de Brayan" class="me" />
+      </figure>
+      <div class="hero__text">
+        <h1>Hola, soy Brayan</h1>
+        <h2>Estudiante de Ingeniería de Sistemas</h2>
+        <p>Estoy aprendiendo programación y desarrollo web, con interés en crear proyectos útiles y prácticos mientras avanzo en mi carrera universitaria.</p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Mis Lenguajes</h2>
+      <div class="skills">
+        <article class="skill-card">
+          <img src="./img/java.png" alt="Logo de Java" class="skill-logo">
+          <h3>Java</h3>
+          <p>Me desenvuelvo bien en programación orientada a objetos, estructuras de datos y aplicaciones básicas.</p>
+        </article>
+
+        <article class="skill-card">
+          <img src="./img/cpp.png" alt="Logo de C++" class="skill-logo">
+          <h3>C++</h3>
+          <p>Buen manejo de estructuras de control, algoritmos y lógica de programación aplicada.</p>
+        </article>
+
+        <article class="skill-card">
+          <img src="./img/lua.png" alt="Logo de Lua" class="skill-logo">
+          <h3>Lua</h3>
+          <p>Experiencia básica en desarrollo de scripts para videojuegos y sistemas interactivos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+      <h2>Proyectos destacados</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>POO en Java</h3>
+          <p>Ejercicios de Programación Orientada a Objetos, aplicando herencia y polimorfismo.</p>
+          <a class="btn btn--ghost" href="#">Repositorio</a>
+        </article>
+        <article class="card">
+          <h3>Estructuras de Datos</h3>
+          <p>Implementaciones de listas, pilas y colas en Java, aplicadas en ejemplos prácticos.</p>
+          <a class="btn btn--ghost" href="#">Repositorio</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies">
+      <h2>Mis Hobbies</h2>
+      <div class="hobbies-carousel">
+        <div class="hob">
+          <img src="./img/juegos.png" alt="Juegos">
+          <span class="hob-desc">Me gusta jugar videojuegos para divertirme, relajarme y compartir con amigos.</span>
+        </div>
+        <div class="hob">
+          <img src="./img/baloncesto.png" alt="Baloncesto">
+          <span class="hob-desc">Me encanta el baloncesto porque me ayuda a divertirme,tener un buen fisico, conocer gente y compartir buenos momentos con los demás en la cancha.</span>
+        </div>
+        <div class="hob">
+          <img src="./img/dormir.jpg" alt="Dormir">
+          <span class="hob-desc">Ha quien no le gusta dormir jaja</span>
+        </div>
+        <div class="hob">
+          <img src="./img/gimnasio.png" alt="Gimnasio">
+          <span class="hob-desc">Ir al gimnasio para mantenerme activo y que me de la palida</span>
+        </div>
+        <div class="hob">
+          <img src="./img/musica.jpg" alt="Música">
+          <span class="hob-desc">Escuchar música es un encanto</span>
+        </div>
+        <div class="hob">
+          <img src="./img/amigos.jpg" alt="Amigos">
+          <span class="hob-desc">Hablar con amigos</span>
+        </div>
+        <div class="hob">
+          <img src="./img/salir.jpg" alt="Salir">
+          <span class="hob-desc">Salir y conocer lugares</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p class="section-desc">¿Construimos algo juntos? Escríbeme y te respondo.</p>
+      
+      <form class="contact-form" action="mailto:tu.email@ejemplo.com" method="post" enctype="text/plain">
+        <label>Nombre
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+        </label>
+        <label>Email
+          <input type="email" name="correo" placeholder="tucorreo@dominio.com" required>
+        </label>
+        <label>Mensaje
+          <textarea name="mensaje" placeholder="Cuéntame tu idea" required></textarea>
+        </label>
+        <button type="submit" class="btn btn--solid">Enviar</button>
+      </form>
+
+      <div class="socials">
+        <a href="https://github.com/" target="_blank"><img src="./img/github.png" alt="GitHub"></a>
+        <a href="https://facebook.com/" target="_blank"><img src="./img/facebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com/" target="_blank"><img src="./img/instagram.png" alt="Instagram"></a>
+        <a href="https://t.me/" target="_blank"><img src="./img/telegram.png" alt="Telegram"></a>
+        <a href="https://tiktok.com/" target="_blank"><img src="./img/tiktok.png" alt="TikTok"></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Brayan</p>
+  </footer>
+</body>
+</html>
